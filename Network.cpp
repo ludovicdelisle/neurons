@@ -18,7 +18,7 @@ Network::Network(int Ce, int Ci) {
     for (int i = 0; i < Ci + Ce; ++i) {
         for (int j = 0; j < Ci + Ce; ++j) {
             k[i][j] = 0;
-            bool again = true;
+            bool again = false; //mettre true si c'est confirmé qu'il peut y avoir plusieurs connections
             while (again) {
                 if (distribution(generator) > 90) {
                     k[i][j] += 1;
@@ -27,9 +27,9 @@ Network::Network(int Ce, int Ci) {
                 }
             }
             if (i == 0) {
-                if (distribution(generator) > Ce / (Ce + Ci) * 100) {
+                if (j<Ce) {
 
-                    Neuron* n1 = new Neuron (false, this);
+                    Neuron* n1 = new Neuron (true, this);
                     list_neurons.push_back(n1);
                     list_inhibitory_neurons.push_back(n1);
                 } else {
@@ -74,7 +74,7 @@ double Network::calcul_poisson() {
     random_device rd;
     mt19937 gen(rd());
     poisson_distribution<> distribution(0.5);
-    return distribution(gen)*15.2;
+    return distribution(gen);
 }
 vector<int>Network::get_number_of_spike_per_cycle() const {
     return number_of_spike_per_cycle;
