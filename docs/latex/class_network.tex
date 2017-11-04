@@ -1,0 +1,70 @@
+\hypertarget{class_network}{}\section{Network Class Reference}
+\label{class_network}\index{Network@{Network}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_network_a3cc2fb4f8fa4d507077e8da85ce5a1c8}\label{class_network_a3cc2fb4f8fa4d507077e8da85ce5a1c8}} 
+\hyperlink{class_network_a3cc2fb4f8fa4d507077e8da85ce5a1c8}{Network} ()
+\begin{DoxyCompactList}\small\item\em constructor of the network \end{DoxyCompactList}\item 
+deque$<$ int $>$ \hyperlink{class_network_acc8227556c922215947eb3d88fcf2161}{get\+\_\+number\+\_\+of\+\_\+spike\+\_\+per\+\_\+cycle} () const
+\item 
+void \hyperlink{class_network_ad9c58cb65b33316b93804ed59c3c35ab}{update} (double const \&simtime)
+\item 
+array$<$ deque$<$ int $>$, 1000 $>$ \hyperlink{class_network_aa091395c56fe860d89c10b605e227727}{get\+\_\+spike\+\_\+neurons} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_network_a6c1b05b81fbc7f3c8b47dc4f26209aca}\label{class_network_a6c1b05b81fbc7f3c8b47dc4f26209aca}} 
+array$<$ \hyperlink{class_neuron}{Neuron}, Ne+Ni $>$ \hyperlink{class_network_a6c1b05b81fbc7f3c8b47dc4f26209aca}{list\+\_\+neurons}
+\begin{DoxyCompactList}\small\item\em vector with pointers on every neuron in the network \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_network_a1e898ef4c94a844087396defe47746c4}\label{class_network_a1e898ef4c94a844087396defe47746c4}} 
+deque$<$ double $>$ \hyperlink{class_network_a1e898ef4c94a844087396defe47746c4}{time\+\_\+of\+\_\+spikes}
+\begin{DoxyCompactList}\small\item\em vector with all the time at which a spike occurred \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_network_a05cf85067b1fa474657e1037fa04990d}\label{class_network_a05cf85067b1fa474657e1037fa04990d}} 
+deque$<$ int $>$ \hyperlink{class_network_a05cf85067b1fa474657e1037fa04990d}{number\+\_\+of\+\_\+spike\+\_\+per\+\_\+cycle}
+\begin{DoxyCompactList}\small\item\em vector with the number of spike that occured during each cycle \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_network_a4f09c296195bc891346c6fd75e40de70}\label{class_network_a4f09c296195bc891346c6fd75e40de70}} 
+array$<$ deque$<$ int $>$, Ne+Ni $>$ \hyperlink{class_network_a4f09c296195bc891346c6fd75e40de70}{tab\+\_\+target}
+\begin{DoxyCompactList}\small\item\em array of deque that contains each neuron\textquotesingle{}s conections \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_network_afa1f43d10de7ca659825149645d56028}\label{class_network_afa1f43d10de7ca659825149645d56028}} 
+array$<$ deque$<$ int $>$, 1000 $>$ \hyperlink{class_network_afa1f43d10de7ca659825149645d56028}{spikes\+\_\+neurons}
+\begin{DoxyCompactList}\small\item\em array of deque that contains the number of the neuron (in the 50 firsts) that spiked during each time step \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_network_acc8227556c922215947eb3d88fcf2161}\label{class_network_acc8227556c922215947eb3d88fcf2161}} 
+\index{Network@{Network}!get\+\_\+number\+\_\+of\+\_\+spike\+\_\+per\+\_\+cycle@{get\+\_\+number\+\_\+of\+\_\+spike\+\_\+per\+\_\+cycle}}
+\index{get\+\_\+number\+\_\+of\+\_\+spike\+\_\+per\+\_\+cycle@{get\+\_\+number\+\_\+of\+\_\+spike\+\_\+per\+\_\+cycle}!Network@{Network}}
+\subsubsection{\texorpdfstring{get\+\_\+number\+\_\+of\+\_\+spike\+\_\+per\+\_\+cycle()}{get\_number\_of\_spike\_per\_cycle()}}
+{\footnotesize\ttfamily deque$<$ int $>$ Network\+::get\+\_\+number\+\_\+of\+\_\+spike\+\_\+per\+\_\+cycle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+at the end of each step the number of spikes that occurred during that time interval is kept in a vector number\+\_\+of\+\_\+spike\+\_\+per\+\_\+cycle \begin{DoxyReturn}{Returns}
+the vector that keeps the number of spike that occurred during each cycle 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_network_aa091395c56fe860d89c10b605e227727}\label{class_network_aa091395c56fe860d89c10b605e227727}} 
+\index{Network@{Network}!get\+\_\+spike\+\_\+neurons@{get\+\_\+spike\+\_\+neurons}}
+\index{get\+\_\+spike\+\_\+neurons@{get\+\_\+spike\+\_\+neurons}!Network@{Network}}
+\subsubsection{\texorpdfstring{get\+\_\+spike\+\_\+neurons()}{get\_spike\_neurons()}}
+{\footnotesize\ttfamily array$<$ deque$<$ int $>$, 1000 $>$ Network\+::get\+\_\+spike\+\_\+neurons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the time at which the 50 first neurons spiked 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_network_ad9c58cb65b33316b93804ed59c3c35ab}\label{class_network_ad9c58cb65b33316b93804ed59c3c35ab}} 
+\index{Network@{Network}!update@{update}}
+\index{update@{update}!Network@{Network}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Network\+::update (\begin{DoxyParamCaption}\item[{double const \&}]{simtime }\end{DoxyParamCaption})}
+
+manages all the neuron in the network, updates and charges them 
+\begin{DoxyParams}{Parameters}
+{\em simtime} & is the actual time of the simulation \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ludovicdelisle/\+Clion\+Projects/neurons/Network.\+h\item 
+/\+Users/ludovicdelisle/\+Clion\+Projects/neurons/Network.\+cpp\end{DoxyCompactItemize}

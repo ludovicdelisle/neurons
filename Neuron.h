@@ -4,6 +4,7 @@
 #include <vector>
 #include <cmath>
 #include <array>
+#include "Constant.h"
 
 #ifndef NEURONS_NEURON_H
 #define NEURONS_NEURON_H
@@ -21,20 +22,13 @@ public:
 
     /// updates the membrane potential of the neuron and "informs" its network when it spikes
     /// @param input is the energy received from outside the network
-    /// @param h is the time a step takes, t is the time of the simulation
     /// @return if the neuron is refractory or not
-    bool update();
-
-
-    /// @return the boolean refractory
-    bool get_refractory()const;
-
+    bool update(double input);
 
     /// calculate the new membrane potential, if there is no input, the value of the potential should decrease
     /// @param input is the energy received from outside the network
-    /// @param h is the time a step takes
     /// @return : the new value of the potential
-    double new_potential_calcul();
+    double new_potential_calcul(double input);
 
 
     /// when a neuron has a spike, it gives a charge to the next ones via this method
@@ -45,6 +39,9 @@ public:
 
     ///rotates the vector that is the buffer
     void set_buffer();
+
+    ///@param the membrane potential of the neuron
+    double const get_potential();
 
 
 private:
@@ -58,7 +55,11 @@ private:
     ///buffer of the neuron, when it is charged by another neuron, the charge is added in the first case. It rotates and when it reaches the 15th case the charge is used in the calcul of the potential
     array<double, 15> buffer={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
+    ///calculate the poisson distribution of the charge that is recieved from outside the network
     double calcul_poisson()const;
+
+    ///after a neuron is refractory it takes 2 time step to update the membrane potential again
+    int refractory_clock=2;
 };
 
 

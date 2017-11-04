@@ -8,10 +8,15 @@ Neuron::Neuron(){
 
 }
 
-bool Neuron::update() {
-    if (refractory){
+bool Neuron::update(double input) {
+    if (refractory && refractory_clock==0){
+        potential_V=new_potential_calcul(input);
+        set_buffer();
+        refractory_clock=2;
         refractory=false;
-        potential_V=new_potential_calcul();
+        return false;
+    }else if (refractory && refractory_clock!=0){
+        refractory_clock--;
         set_buffer();
         return false;
     }else if(potential_V>max_membranepotential){
@@ -20,17 +25,14 @@ bool Neuron::update() {
         set_buffer();
         return true;
     }else{
-        potential_V=new_potential_calcul();
+        potential_V=new_potential_calcul(input);
         set_buffer();
         return false;
     }
 }
-bool Neuron::get_refractory()const{
-    return refractory;
-}
-double Neuron::new_potential_calcul() {
-    long double V;
-        V = potential_V = potential_V * c1 + input * c2 + buffer.back() + calcul_poisson();
+double Neuron::new_potential_calcul(double input) {
+
+    long double V (potential_V * c1 + input * c2 + buffer.back() + calcul_poisson());
     return V;
 }
 
@@ -47,6 +49,10 @@ void Neuron::set_buffer(){
 double Neuron::calcul_poisson()const {
     random_device rd;
     mt19937 gen(rd());
-    poisson_distribution<> distribution(2);
-    return distribution(gen)*0.402;
+    poisson_distribution<> distribution(nu*Ne*h/10*Je);
+    return distribution(gen)*coeff_poisson;
+}
+
+double const Neuron::get_potential(){
+    return potential_V;
 }

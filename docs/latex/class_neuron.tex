@@ -1,0 +1,109 @@
+\hypertarget{class_neuron}{}\section{Neuron Class Reference}
+\label{class_neuron}\index{Neuron@{Neuron}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_neuron_a823487d01615fadb8ac19a2768dd9d96}\label{class_neuron_a823487d01615fadb8ac19a2768dd9d96}} 
+\hyperlink{class_neuron_a823487d01615fadb8ac19a2768dd9d96}{Neuron} ()
+\begin{DoxyCompactList}\small\item\em constructor of a neuron \end{DoxyCompactList}\item 
+bool \hyperlink{class_neuron_abad446d547800d3ba15a2da374fe409e}{update} (double input)
+\item 
+double \hyperlink{class_neuron_a689b33332f090aab40360f53c8bcfac6}{new\+\_\+potential\+\_\+calcul} (double input)
+\item 
+void \hyperlink{class_neuron_abfc4d63f88dd429dbd0d9dd379e232a0}{charge\+\_\+J} (double const \&input, int const \&delay)
+\item 
+\mbox{\Hypertarget{class_neuron_a6432f7cc92b4c6ccb6321eac1caefd70}\label{class_neuron_a6432f7cc92b4c6ccb6321eac1caefd70}} 
+void \hyperlink{class_neuron_a6432f7cc92b4c6ccb6321eac1caefd70}{set\+\_\+buffer} ()
+\begin{DoxyCompactList}\small\item\em rotates the vector that is the buffer \end{DoxyCompactList}\item 
+double const \hyperlink{class_neuron_a96dcaec2f9146dedd3f926d35b2c08f4}{get\+\_\+potential} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_neuron_aa041a07cbcde2d11672e2719f9142f88}\label{class_neuron_aa041a07cbcde2d11672e2719f9142f88}} 
+double \hyperlink{class_neuron_aa041a07cbcde2d11672e2719f9142f88}{calcul\+\_\+poisson} () const
+\begin{DoxyCompactList}\small\item\em calculate the poisson distribution of the charge that is recieved from outside the network \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_neuron_aa8becbf43a8a371a89d00ebf9c79ff88}{refractory} =false
+\item 
+\mbox{\Hypertarget{class_neuron_adf7e2553c726153c3231de7c33f83228}\label{class_neuron_adf7e2553c726153c3231de7c33f83228}} 
+double {\bfseries potential\+\_\+V} =0
+\item 
+\mbox{\Hypertarget{class_neuron_adaa6ad5e0febdab056ed73d59ce45044}\label{class_neuron_adaa6ad5e0febdab056ed73d59ce45044}} 
+array$<$ double, 15 $>$ \hyperlink{class_neuron_adaa6ad5e0febdab056ed73d59ce45044}{buffer} =\{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\}
+\begin{DoxyCompactList}\small\item\em buffer of the neuron, when it is charged by another neuron, the charge is added in the first case. It rotates and when it reaches the 15th case the charge is used in the calcul of the potential \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_neuron_a801063d9eebb08d0605743eab1fba11f}\label{class_neuron_a801063d9eebb08d0605743eab1fba11f}} 
+int \hyperlink{class_neuron_a801063d9eebb08d0605743eab1fba11f}{refractory\+\_\+clock} =2
+\begin{DoxyCompactList}\small\item\em after a neuron is refractory it takes 2 time step to update the membrane potential again \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_neuron_abfc4d63f88dd429dbd0d9dd379e232a0}\label{class_neuron_abfc4d63f88dd429dbd0d9dd379e232a0}} 
+\index{Neuron@{Neuron}!charge\+\_\+J@{charge\+\_\+J}}
+\index{charge\+\_\+J@{charge\+\_\+J}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{charge\+\_\+\+J()}{charge\_J()}}
+{\footnotesize\ttfamily void Neuron\+::charge\+\_\+J (\begin{DoxyParamCaption}\item[{double const \&}]{input,  }\item[{int const \&}]{delay }\end{DoxyParamCaption})}
+
+when a neuron has a spike, it gives a charge to the next ones via this method 
+\begin{DoxyParams}{Parameters}
+{\em input} & is the charge that this neuron receives \\
+\hline
+{\em delay} & is the time it will take until this neuron receives the charge. note that here the time is reversed, 15 is the minimum time and 0 is 15 steps \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_neuron_a96dcaec2f9146dedd3f926d35b2c08f4}\label{class_neuron_a96dcaec2f9146dedd3f926d35b2c08f4}} 
+\index{Neuron@{Neuron}!get\+\_\+potential@{get\+\_\+potential}}
+\index{get\+\_\+potential@{get\+\_\+potential}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{get\+\_\+potential()}{get\_potential()}}
+{\footnotesize\ttfamily double const Neuron\+::get\+\_\+potential (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & membrane potential of the neuron \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_neuron_a689b33332f090aab40360f53c8bcfac6}\label{class_neuron_a689b33332f090aab40360f53c8bcfac6}} 
+\index{Neuron@{Neuron}!new\+\_\+potential\+\_\+calcul@{new\+\_\+potential\+\_\+calcul}}
+\index{new\+\_\+potential\+\_\+calcul@{new\+\_\+potential\+\_\+calcul}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{new\+\_\+potential\+\_\+calcul()}{new\_potential\_calcul()}}
+{\footnotesize\ttfamily double Neuron\+::new\+\_\+potential\+\_\+calcul (\begin{DoxyParamCaption}\item[{double}]{input }\end{DoxyParamCaption})}
+
+calculate the new membrane potential, if there is no input, the value of the potential should decrease 
+\begin{DoxyParams}{Parameters}
+{\em input} & is the energy received from outside the network \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: the new value of the potential 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_neuron_abad446d547800d3ba15a2da374fe409e}\label{class_neuron_abad446d547800d3ba15a2da374fe409e}} 
+\index{Neuron@{Neuron}!update@{update}}
+\index{update@{update}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily bool Neuron\+::update (\begin{DoxyParamCaption}\item[{double}]{input }\end{DoxyParamCaption})}
+
+updates the membrane potential of the neuron and \char`\"{}informs\char`\"{} its network when it spikes 
+\begin{DoxyParams}{Parameters}
+{\em input} & is the energy received from outside the network \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if the neuron is refractory or not 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_neuron_aa8becbf43a8a371a89d00ebf9c79ff88}\label{class_neuron_aa8becbf43a8a371a89d00ebf9c79ff88}} 
+\index{Neuron@{Neuron}!refractory@{refractory}}
+\index{refractory@{refractory}!Neuron@{Neuron}}
+\subsubsection{\texorpdfstring{refractory}{refractory}}
+{\footnotesize\ttfamily bool Neuron\+::refractory =false\hspace{0.3cm}{\ttfamily [private]}}
+
+becomes true when the neuron reaches it\textquotesingle{}s potential when true, the method update will then generate a spike and it will become false again 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/ludovicdelisle/\+Clion\+Projects/neurons/Neuron.\+h\item 
+/\+Users/ludovicdelisle/\+Clion\+Projects/neurons/Neuron.\+cpp\end{DoxyCompactItemize}
