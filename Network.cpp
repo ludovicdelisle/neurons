@@ -35,9 +35,9 @@ void Network::update(double const& simtime) {
                 number_of_spike_per_cycle.back() += 1;
                 for(int j=0; j<tab_target[i].size(); ++j) {
                     if(i<Ni) {
-                        list_neurons[tab_target[i][j]].charge_J(-0.5, 0);
+                        list_neurons[tab_target[i][j]].charge_J(-Ji, delay);
                     }else{
-                        list_neurons[tab_target[i][j]].charge_J(0.1, 0);
+                        list_neurons[tab_target[i][j]].charge_J(Je, delay);
                     }
                 }
             }

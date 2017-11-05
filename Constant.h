@@ -19,9 +19,9 @@ const double max_membranepotential(20); ///potential at which there is a spike
 const double R(20); ///resistance of the membrane
 
 
-const double coeff_poisson(0.1); ///I multiply by it before I return the poisson distribution instead of by Je because of Gtest reasons
 const double Je(0.1);///impulse given by excitatory neurons
-const double Ji(-0.5);///impulse given by inhibitory neurons
+const double g(5);///Ji/Je
+const double Ji(g*Je);///impulse given by inhibitory neurons
 constexpr int teta (20);
 const double nu (2*teta/(tao*Je*Ne*conections));
 

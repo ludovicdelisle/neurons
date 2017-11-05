@@ -20,6 +20,9 @@ public:
     /// constructor of a neuron
     Neuron();
 
+    /// constructor for the unittest when poisson cannot be used
+    Neuron(bool poi);
+
     /// updates the membrane potential of the neuron and "informs" its network when it spikes
     /// @param input is the energy received from outside the network
     /// @return if the neuron is refractory or not
@@ -60,6 +63,8 @@ private:
 
     ///after a neuron is refractory it takes 2 time step to update the membrane potential again
     int refractory_clock=2;
+
+    bool poisson=true;
 };
 
 

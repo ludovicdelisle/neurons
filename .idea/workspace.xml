@@ -4,6 +4,7 @@
     <generated>
       <config projectName="neurons" targetName="gmock_main" />
       <config projectName="neurons" targetName="gtest" />
+      <config projectName="neurons" targetName="doc" />
       <config projectName="neurons" targetName="unittest" />
       <config projectName="neurons" targetName="neurons" />
       <config projectName="neurons" targetName="gtest_main" />
@@ -19,13 +20,186 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb97f7b5-eb95-4f8c-b38c-880348f2ad4f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/CMakeFiles/3.2.3/CMakeCCompiler.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/CMakeFiles/3.2.3/CMakeCXXCompiler.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/CMakeFiles/3.2.3/CMakeDetermineCompilerABI_C.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/CMakeFiles/3.2.3/CMakeDetermineCompilerABI_CXX.bin" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/CMakeFiles/3.2.3/CMakeSystem.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/CMakeFiles/3.2.3/CompilerIdC/CMakeCCompilerId.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/CMakeFiles/3.2.3/CompilerIdC/a.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/CMakeFiles/3.2.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/CMakeFiles/3.2.3/CompilerIdCXX/a.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeError.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/CMakeFiles/neurons.dir/CXX.includecache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/CMakeFiles/neurons.dir/Network.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/CMakeFiles/neurons.dir/Neuron.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/CMakeFiles/neurons.dir/depend.internal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/CMakeFiles/neurons.dir/main.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/CMakeFiles/unittest.dir/CXX.includecache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/CMakeFiles/unittest.dir/Network.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/CMakeFiles/unittest.dir/Neuron.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/CMakeFiles/unittest.dir/depend.internal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/CMakeFiles/unittest.dir/unittest.cpp.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest.dir/CXX.includecache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest.dir/depend.internal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest_main.dir/CXX.includecache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest_main.dir/depend.internal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/googletest/libgtest.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/googletest/libgtest_main.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/neurons" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/unittest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/_constant_8h_source.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/_network_8h_source.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/_neuron_8h_source.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/annotated.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/bc_s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/bdwn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/class_network-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/class_network.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/class_neuron-members.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/class_neuron.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/classes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/closed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/doc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/doxygen.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/doxygen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/dynsections.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/files.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/folderclosed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/folderopen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/functions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/functions_func.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/functions_vars.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/menu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/menudata.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/nav_f.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/nav_g.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/nav_h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/open.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/all_0.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/all_0.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/all_1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/all_1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/all_2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/all_2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/all_3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/all_3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/all_4.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/all_4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/all_5.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/all_5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/all_6.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/all_6.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/all_7.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/all_7.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/all_8.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/all_8.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/classes_0.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/classes_0.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/functions_0.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/functions_0.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/functions_1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/functions_1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/functions_2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/functions_2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/functions_3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/functions_3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/functions_4.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/functions_4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/mag_sel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/nomatches.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/search.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/search.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/search_l.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/search_m.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/search_r.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/searchdata.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/variables_0.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/variables_0.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/variables_1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/variables_1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/variables_2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/variables_2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/variables_3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/variables_3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/variables_4.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/variables_4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/variables_5.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/search/variables_5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/splitbar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/sync_off.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/sync_on.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/tab_a.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/tab_b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/tab_h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/tab_s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/html/tabs.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/latex/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/latex/annotated.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/latex/class_network.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/latex/class_neuron.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/latex/doxygen.sty" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/latex/refman.tex" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/feature_tests.bin" afterPath="$PROJECT_DIR$/build/CMakeFiles/feature_tests.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Constant.h" afterPath="$PROJECT_DIR$/Constant.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Network.cpp" afterPath="$PROJECT_DIR$/Network.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Network.h" afterPath="$PROJECT_DIR$/Network.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Neuron.cpp" afterPath="$PROJECT_DIR$/Neuron.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Neuron.h" afterPath="$PROJECT_DIR$/Neuron.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeCache.txt" afterPath="$PROJECT_DIR$/build/CMakeCache.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/cmake.check_cache" afterPath="$PROJECT_DIR$/build/CMakeFiles/cmake.check_cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/feature_tests.c" afterPath="$PROJECT_DIR$/build/CMakeFiles/feature_tests.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/feature_tests.cxx" afterPath="$PROJECT_DIR$/build/CMakeFiles/feature_tests.cxx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/neurons.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/CMakeFiles/neurons.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/neurons.dir/build.make" afterPath="$PROJECT_DIR$/build/CMakeFiles/neurons.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/neurons.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/build/CMakeFiles/neurons.dir/cmake_clean.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/neurons.dir/depend.make" afterPath="$PROJECT_DIR$/build/CMakeFiles/neurons.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/neurons.dir/flags.make" afterPath="$PROJECT_DIR$/build/CMakeFiles/neurons.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/neurons.dir/link.txt" afterPath="$PROJECT_DIR$/build/CMakeFiles/neurons.dir/link.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/neurons.dir/progress.make" afterPath="$PROJECT_DIR$/build/CMakeFiles/neurons.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/unittest.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/CMakeFiles/unittest.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/unittest.dir/build.make" afterPath="$PROJECT_DIR$/build/CMakeFiles/unittest.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/unittest.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/build/CMakeFiles/unittest.dir/cmake_clean.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/unittest.dir/depend.make" afterPath="$PROJECT_DIR$/build/CMakeFiles/unittest.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/unittest.dir/flags.make" afterPath="$PROJECT_DIR$/build/CMakeFiles/unittest.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/unittest.dir/link.txt" afterPath="$PROJECT_DIR$/build/CMakeFiles/unittest.dir/link.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/unittest.dir/progress.make" afterPath="$PROJECT_DIR$/build/CMakeFiles/unittest.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CTestTestfile.cmake" afterPath="$PROJECT_DIR$/build/CTestTestfile.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/Makefile" afterPath="$PROJECT_DIR$/build/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/cmake_install.cmake" afterPath="$PROJECT_DIR$/build/cmake_install.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/googletest/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/build/googletest/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest.dir/build.make" afterPath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest.dir/cmake_clean.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest.dir/cmake_clean_target.cmake" afterPath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest.dir/cmake_clean_target.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest.dir/depend.make" afterPath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest.dir/flags.make" afterPath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest.dir/link.txt" afterPath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest.dir/link.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest.dir/progress.make" afterPath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest_main.dir/build.make" afterPath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest_main.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest_main.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest_main.dir/cmake_clean.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest_main.dir/cmake_clean_target.cmake" afterPath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest_main.dir/cmake_clean_target.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest_main.dir/depend.make" afterPath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest_main.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest_main.dir/flags.make" afterPath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest_main.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest_main.dir/link.txt" afterPath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest_main.dir/link.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest_main.dir/progress.make" afterPath="$PROJECT_DIR$/build/googletest/CMakeFiles/gtest_main.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/googletest/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/build/googletest/CMakeFiles/progress.marks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/googletest/CTestTestfile.cmake" afterPath="$PROJECT_DIR$/build/googletest/CTestTestfile.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/googletest/Makefile" afterPath="$PROJECT_DIR$/build/googletest/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/googletest/cmake_install.cmake" afterPath="$PROJECT_DIR$/build/googletest/cmake_install.cmake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/unittest.cpp" afterPath="$PROJECT_DIR$/unittest.cpp" />
     </list>
@@ -50,11 +224,9 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -62,8 +234,8 @@
       <file leaf-file-name="Neuron.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Neuron.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="48" column="38" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
+            <state relative-caret-position="615">
+              <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
               <folding>
                 <element signature="e#48#67#0" expanded="true" />
               </folding>
@@ -71,11 +243,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Neuron.h" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Neuron.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Neuron.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="60" column="95" selection-start-line="60" selection-start-column="95" selection-end-line="60" selection-end-column="95" />
+            <state relative-caret-position="-464">
+              <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
               <folding>
                 <element signature="e#48#65#0" expanded="true" />
               </folding>
@@ -83,11 +255,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Constant.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Constant.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Constant.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="315">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -96,10 +268,11 @@
       <file leaf-file-name="unittest.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/unittest.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="389">
+              <caret line="87" column="27" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
               <folding>
                 <element signature="e#50#69#0" expanded="true" />
+                <marker date="1509891710000" expanded="true" signature="1337:1744" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -108,8 +281,8 @@
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="76" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="76" />
+            <state relative-caret-position="555">
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -118,10 +291,11 @@
       <file leaf-file-name="Network.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Network.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+            <state relative-caret-position="289">
+              <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
               <folding>
                 <element signature="e#48#65#0" expanded="true" />
+                <marker date="1509875864000" expanded="true" signature="211:1413" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -130,8 +304,8 @@
       <file leaf-file-name="Network.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Network.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="52" column="1" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+            <state relative-caret-position="390">
+              <caret line="39" column="73" selection-start-line="39" selection-start-column="73" selection-end-line="39" selection-end-column="73" />
               <folding>
                 <element signature="e#49#69#0" expanded="true" />
               </folding>
@@ -158,14 +332,14 @@
         <option value="$PROJECT_DIR$/neurons_tests/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/basic_test.cpp" />
         <option value="$PROJECT_DIR$/gtest/googletest/src/gtest-all.cc" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/unittest.cpp" />
+        <option value="$PROJECT_DIR$/Network.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Neuron.h" />
-        <option value="$PROJECT_DIR$/Network.h" />
-        <option value="$PROJECT_DIR$/Network.cpp" />
-        <option value="$PROJECT_DIR$/Neuron.cpp" />
         <option value="$PROJECT_DIR$/Constant.h" />
+        <option value="$PROJECT_DIR$/Neuron.cpp" />
+        <option value="$PROJECT_DIR$/Network.cpp" />
+        <option value="$PROJECT_DIR$/unittest.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
       </list>
     </option>
   </component>
@@ -176,9 +350,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="3" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="736" />
+    <option name="height" value="734" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -222,24 +397,7 @@
     </navigator>
     <panes>
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neurons" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neurons" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neurons" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
     </panes>
   </component>
@@ -419,12 +577,17 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="neurons" TARGET_NAME="neurons" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="neurons" RUN_TARGET_NAME="neurons">
+    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="neurons" TARGET_NAME="unittest" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="neurons" RUN_TARGET_NAME="unittest">
       <envs />
       <method />
     </configuration>
-    <list size="1">
+    <configuration default="false" name="doc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="neurons" TARGET_NAME="doc" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="1" class="java.lang.String" itemvalue="Application.doc" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -446,25 +609,25 @@
       <workItem from="1508158109942" duration="15725000" />
       <workItem from="1508944373124" duration="27410000" />
       <workItem from="1509303212820" duration="46399000" />
-      <workItem from="1509803758056" duration="7507000" />
+      <workItem from="1509803758056" duration="22917000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128155000" />
+    <option name="totallyTimeSpent" value="143565000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="736" extended-state="6" />
+    <frame x="3" y="23" width="1280" height="734" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1429706" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1429706" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32608697" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32608697" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32398754" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32554516" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24922119" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39968896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -528,6 +691,7 @@
           <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
           <folding>
             <element signature="e#48#65#0" expanded="true" />
+            <marker date="1509875864000" expanded="true" signature="211:1413" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -586,79 +750,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="76" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unittest.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <element signature="e#50#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Neuron.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="60" column="95" selection-start-line="60" selection-start-column="95" selection-end-line="60" selection-end-column="95" />
-          <folding>
-            <element signature="e#48#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Network.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+        <state relative-caret-position="289">
+          <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
           <folding>
             <element signature="e#48#65#0" expanded="true" />
+            <marker date="1509875864000" expanded="true" signature="211:1413" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Network.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="52" column="1" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+        <state relative-caret-position="390">
+          <caret line="39" column="73" selection-start-line="39" selection-start-column="73" selection-end-line="39" selection-end-column="73" />
           <folding>
             <element signature="e#49#69#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/unittest.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="87" column="27" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
+          <folding>
+            <element signature="e#50#69#0" expanded="true" />
+            <marker date="1509891710000" expanded="true" signature="1337:1744" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Constant.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Neuron.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="48" column="38" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
+        <state relative-caret-position="615">
+          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
           <folding>
             <element signature="e#48#67#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Constant.h">
+    <entry file="file://$PROJECT_DIR$/Neuron.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="-464">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+          <folding>
+            <element signature="e#48#65#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

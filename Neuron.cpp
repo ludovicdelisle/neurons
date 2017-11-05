@@ -7,7 +7,9 @@
 Neuron::Neuron(){
 
 }
-
+Neuron::Neuron(bool poi){
+poisson=poi;
+}
 bool Neuron::update(double input) {
     if (refractory && refractory_clock==0){
         potential_V=new_potential_calcul(input);
@@ -37,7 +39,7 @@ double Neuron::new_potential_calcul(double input) {
 }
 
 void Neuron::charge_J(double const& input, int const& delay){
-    buffer[delay] += input;
+    buffer[15-delay] += input;
 }
 void Neuron::set_buffer(){
     for(size_t i = buffer.size()-1; i>0; --i){
@@ -47,6 +49,10 @@ void Neuron::set_buffer(){
 }
 
 double Neuron::calcul_poisson()const {
+    double coeff_poisson=0;
+    if(poisson){
+        coeff_poisson=Je;
+    }
     random_device rd;
     mt19937 gen(rd());
     poisson_distribution<> distribution(nu*Ne*h/10*Je);

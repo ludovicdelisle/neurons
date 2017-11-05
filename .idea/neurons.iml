@@ -14,6 +14,7 @@
       <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Constant.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/unittest.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Doxyfile.in" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Neuron.cpp" isTestSource="false" />
     </content>

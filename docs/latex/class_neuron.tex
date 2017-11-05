@@ -6,6 +6,9 @@
 \mbox{\Hypertarget{class_neuron_a823487d01615fadb8ac19a2768dd9d96}\label{class_neuron_a823487d01615fadb8ac19a2768dd9d96}} 
 \hyperlink{class_neuron_a823487d01615fadb8ac19a2768dd9d96}{Neuron} ()
 \begin{DoxyCompactList}\small\item\em constructor of a neuron \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_neuron_a9c2598da8cb0361e9499e070a19a8d42}\label{class_neuron_a9c2598da8cb0361e9499e070a19a8d42}} 
+\hyperlink{class_neuron_a9c2598da8cb0361e9499e070a19a8d42}{Neuron} (bool poi)
+\begin{DoxyCompactList}\small\item\em constructor for the unittest when poisson cannot be used \end{DoxyCompactList}\item 
 bool \hyperlink{class_neuron_abad446d547800d3ba15a2da374fe409e}{update} (double input)
 \item 
 double \hyperlink{class_neuron_a689b33332f090aab40360f53c8bcfac6}{new\+\_\+potential\+\_\+calcul} (double input)
@@ -36,7 +39,10 @@ array$<$ double, 15 $>$ \hyperlink{class_neuron_adaa6ad5e0febdab056ed73d59ce4504
 \begin{DoxyCompactList}\small\item\em buffer of the neuron, when it is charged by another neuron, the charge is added in the first case. It rotates and when it reaches the 15th case the charge is used in the calcul of the potential \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_neuron_a801063d9eebb08d0605743eab1fba11f}\label{class_neuron_a801063d9eebb08d0605743eab1fba11f}} 
 int \hyperlink{class_neuron_a801063d9eebb08d0605743eab1fba11f}{refractory\+\_\+clock} =2
-\begin{DoxyCompactList}\small\item\em after a neuron is refractory it takes 2 time step to update the membrane potential again \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em after a neuron is refractory it takes 2 time step to update the membrane potential again \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_neuron_adf7b81d5f363ea9580937f4efa1b12f2}\label{class_neuron_adf7b81d5f363ea9580937f4efa1b12f2}} 
+bool {\bfseries poisson} =true
+\end{DoxyCompactItemize}
 
 
 \subsection{Member Function Documentation}
@@ -105,5 +111,5 @@ becomes true when the neuron reaches it\textquotesingle{}s potential when true, 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/\+Users/ludovicdelisle/\+Clion\+Projects/neurons/Neuron.\+h\item 
-/\+Users/ludovicdelisle/\+Clion\+Projects/neurons/Neuron.\+cpp\end{DoxyCompactItemize}
+Neuron.\+h\item 
+Neuron.\+cpp\end{DoxyCompactItemize}

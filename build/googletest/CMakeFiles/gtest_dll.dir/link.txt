@@ -1,0 +1,1 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -std=c++11 -dynamiclib -Wl,-headerpad_max_install_names  -o libgtest_dll.dylib -install_name /Users/ludovicdelisle/ClionProjects/neurons/build/googletest/libgtest_dll.dylib CMakeFiles/gtest_dll.dir/src/gtest-all.cc.o CMakeFiles/gtest_dll.dir/src/gtest_main.cc.o 
