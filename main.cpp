@@ -1,10 +1,10 @@
-#include <iostream>
+
 #include "Neuron.h"
 #include "Network.h"
 using namespace std;
 int main() {
     Network network;
-    int sim_time = Simstart;
+    double sim_time = Simstart;
     do{
         network.update(sim_time);
         sim_time+=h;

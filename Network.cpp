@@ -3,7 +3,6 @@
 //
 
 #include "Network.h"
-#include <iostream>
 using namespace std;
 
 std::default_random_engine generator;
@@ -23,15 +22,11 @@ Network::Network() {
              }
          }
      }
-    cout<<"network created"<<endl;
 }
 void Network::update(double const& simtime) {
     int input = 0;
         for (int i = 0; i < Ne+Ni; ++i) {
             if (list_neurons[i].update(input)) {
-                if(i<50) {
-                    spikes_neurons[simtime].push_back(i);
-                }
                 number_of_spike_per_cycle.back() += 1;
                 for(int j=0; j<tab_target[i].size(); ++j) {
                     if(i<Ni) {
@@ -46,8 +41,4 @@ void Network::update(double const& simtime) {
 }
 deque<int>Network::get_number_of_spike_per_cycle() const {
     return number_of_spike_per_cycle;
-}
-
-array<deque<int>, 1000> Network::get_spike_neurons()const{
-return spikes_neurons;
 }

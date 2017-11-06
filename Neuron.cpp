@@ -1,7 +1,6 @@
 //
 // Created by Ludovic Delisle on 10/2/17.
 //
-#include <iostream>
 #include "Neuron.h"
 #include "Network.h"
 Neuron::Neuron(){
